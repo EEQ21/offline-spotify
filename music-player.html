@@ -367,6 +367,22 @@
             flex-shrink: 0
         }
 
+        .credits-link {
+            display: block;
+            margin-top: 4px;
+            padding: 6px 8px;
+            font-size: 11px;
+            color: var(--txt3);
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: color .2s;
+        }
+
+            .credits-link:hover {
+                color: var(--txt2)
+            }
+
         .load-btn {
             width: 100%;
             padding: 10px 16px;
@@ -1349,6 +1365,7 @@
                 <button class="load-btn accent" onclick="importSpotify()">
                     <i class="ti ti-brand-spotify"></i> Import Spotify Playlist
                 </button>
+                <a class="credits-link" href="https://github.com/EEQ21/offline-spotify#credits" target="_blank" rel="noopener noreferrer">Credits (SpotDL, yt-dlp, and more)</a>
             </div>
         </div>
 

@@ -16,8 +16,28 @@ A Spotify-inspired desktop music player designed for offline listening, featurin
 
 ## Credits
 
-Playlist downloading is powered by SpotDL:
-https://github.com/spotdl/spotify-downloader
+Offline Spotify is an independent project and is **not affiliated with Spotify**.
+
+### Playlist downloading
+
+Playlist import runs an external downloader (shipped or placed next to the app as `spotify-dl.exe`). That tool is built on:
+
+| Project | Role |
+| -------- | ----- |
+| [SpotDL](https://github.com/spotdl/spotify-downloader) | Matches Spotify tracks and orchestrates downloads |
+| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Fetches audio from YouTube and other sources (used by SpotDL) |
+| [FFmpeg](https://ffmpeg.org/) | Audio conversion when required by the downloader |
+
+Thank you to the SpotDL, yt-dlp, and FFmpeg maintainers and contributors.
+
+### App libraries
+
+| Project | Role |
+| -------- | ----- |
+| [TagLibSharp](https://github.com/mono/taglib-sharp) | Reading MP3 metadata and cover art (.NET) |
+| [Microsoft WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) | Embedded player UI |
+| [Tabler Icons](https://github.com/tabler/tabler-icons) | Icons in the interface |
+| [jsmediatags](https://github.com/aadsm/jsmediatags) | Tag reading for files loaded in the browser UI |
 
 ## Setup
 
